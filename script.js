@@ -148,17 +148,23 @@ function getRandomPosition() {
 
 function _slideEmpat() {
   const slideEmpat = document.getElementById('slideEmpat');
-  const btn = document.getElementsByTagName('button');
+
+  const btnGak = document.getElementById('gak');
+  const btnSuka = document.getElementById('suka');
 
   slideEmpat.classList.remove('d-none');
 
-  btn[0].addEventListener('click', function () {
+  btnGak.addEventListener('click', function () {
     const xy = getRandomPosition();
     slideEmpat.style.top = xy[0] + 'px';
   });
 
-  btn[1].addEventListener('click', function () {
-    slideEmpat.classList.replace('animate__fadeInDown', 'animate__bounceOut');
+  btnSuka.addEventListener('click', function () {
+    slideEmpat.classList.replace(
+      'animate__fadeInDown',
+      'animate__bounceOut'
+    );
+
     slideEmpat.classList.remove('animate__delay-2s');
 
     setTimeout(() => {
