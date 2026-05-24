@@ -1,27 +1,26 @@
 // ================= MUSIC =================
 
-function playMusic() {
-  const music = document.getElementById('background-music');
+// ================= PILIH LAGU =================
+
+function chooseMusic(song) {
+
+  const music =
+    document.getElementById('background-music');
+
+  const musicChoice =
+    document.getElementById('musicChoice');
+
+  music.src = song;
+
   music.volume = 0.5;
 
   music.play().catch(() => {
     console.log("Autoplay diblokir browser");
   });
+
+  musicChoice.classList.add('d-none');
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  const startBtn = document.createElement('button');
-
-  startBtn.innerText = "Mulai 🤍";
-  startBtn.id = "startBtn";
-
-  document.body.appendChild(startBtn);
-
-  startBtn.addEventListener('click', () => {
-    playMusic();
-    startBtn.remove();
-  });
-});
 
 // ================= TIMER =================
 

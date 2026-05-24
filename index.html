@@ -14,7 +14,19 @@
 
 <body>
 
-  <audio id="background-music" src="./music/monokrom.mp3" preload="auto"></audio>
+  <audio id="background-music" preload="auto"></audio>
+
+  <div id="musicChoice" class="music-choice">
+    <h4>Pilih lagu dulu 🤍</h4>
+
+    <button onclick="chooseMusic('./music/monokrom.mp3')">
+      Lagu 1
+    </button>
+
+    <button onclick="chooseMusic('./music/sempurna.mp3')">
+      Lagu 2
+    </button>
+  </div>
 
   <div class="bg" id="content">
 
