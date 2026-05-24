@@ -2,6 +2,7 @@
 
 function playMusic() {
   const music = document.getElementById('background-music');
+  music.volume = 0.5;
 
   music.play().catch(() => {
     console.log("Autoplay diblokir browser");
@@ -9,11 +10,18 @@ function playMusic() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  playMusic();
+  const startBtn = document.createElement('button');
+
+  startBtn.innerText = "Mulai 🤍";
+  startBtn.id = "startBtn";
+
+  document.body.appendChild(startBtn);
+
+  startBtn.addEventListener('click', () => {
+    playMusic();
+    startBtn.remove();
+  });
 });
-
-document.body.addEventListener('click', playMusic, { once: true });
-
 
 // ================= TIMER =================
 

@@ -715,3 +715,17 @@ body {
     padding: 0 20px;
   }
 }
+
+#startBtn {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: 140px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: #333;
+  font-weight: 700;
+  z-index: 9999999;
+}
