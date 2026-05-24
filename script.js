@@ -207,7 +207,7 @@ new TypeIt("#teks1", {
     "Semoga di umur yang baru ini semua sedih perlahan diganti dengan bahagia.",
     "Semoga langkah sayang selalu dipenuhi hal-hal baik dan orang-orang tulus.",
     "Aku mungkin tidak bisa selalu ada di setiap waktu sayang...",
-    "Tapi percayalah, dalam setiap doaku selalu ada nama kamu.",
+    "Tapi percayalah, dalam setiap doaku selalu ada nama sayang.",
     "Dan semoga aku tetap menjadi rumah yang nyaman untuk hati kamu."
   ],
   startDelay: 4000,
@@ -221,7 +221,7 @@ new TypeIt("#teks1", {
 new TypeIt("#teks2", {
   strings: [
     "Aku tidak pandai merangkai kata...",
-    "Tapi aku selalu pandai mendoakan kamu diam-diam.",
+    "Tapi aku selalu pandai mendoakan sayang diam-diam.",
     "Barakallah fii umrik sayang 🤍",
     "Semoga panjang umur, sehat selalu, dan dipermudah segala urusannya.",
     "Semoga semua impian yang belum tercapai bisa segera Tuhan dekatkan.",
